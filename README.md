@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## First time run the project
 
-### `git clone ...........................`
+### `git clone https://github.com/andrew354/pasiona-frontend-test.git`
 
 Clones the repository
 

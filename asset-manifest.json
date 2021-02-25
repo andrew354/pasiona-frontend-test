@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/pasiona-frontend-test/static/css/main.84dfc713.chunk.css",
+    "main.js": "/pasiona-frontend-test/static/js/main.bb339c55.chunk.js",
+    "main.js.map": "/pasiona-frontend-test/static/js/main.bb339c55.chunk.js.map",
+    "runtime-main.js": "/pasiona-frontend-test/static/js/runtime-main.c545ab8e.js",
+    "runtime-main.js.map": "/pasiona-frontend-test/static/js/runtime-main.c545ab8e.js.map",
+    "static/js/2.3ac0e537.chunk.js": "/pasiona-frontend-test/static/js/2.3ac0e537.chunk.js",
+    "static/js/2.3ac0e537.chunk.js.map": "/pasiona-frontend-test/static/js/2.3ac0e537.chunk.js.map",
+    "static/js/3.52e94bab.chunk.js": "/pasiona-frontend-test/static/js/3.52e94bab.chunk.js",
+    "static/js/3.52e94bab.chunk.js.map": "/pasiona-frontend-test/static/js/3.52e94bab.chunk.js.map",
+    "index.html": "/pasiona-frontend-test/index.html",
+    "static/css/main.84dfc713.chunk.css.map": "/pasiona-frontend-test/static/css/main.84dfc713.chunk.css.map",
+    "static/js/2.3ac0e537.chunk.js.LICENSE.txt": "/pasiona-frontend-test/static/js/2.3ac0e537.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c545ab8e.js",
+    "static/js/2.3ac0e537.chunk.js",
+    "static/css/main.84dfc713.chunk.css",
+    "static/js/main.bb339c55.chunk.js"
+  ]
+}

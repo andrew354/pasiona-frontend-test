@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+* {
+	padding: 0;
+	margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, button {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+/* APP COMPONENT */
+.app {
+	text-align: center;
+	margin-top: 70px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app h1 {
+	margin-bottom: 20px;
+	font-size: 26px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* ITEM COMPONENT */
+.item {
+	display: flex;
+	justify-content: center;
+	height: 40px;
+	margin-bottom: 26px;
+	padding: 20px;
+	border-bottom: 1px solid #eee;
 }
 
-.App-link {
-  color: #61dafb;
+.item h3,
+.item input {
+	word-break: break-all;
+	display: flex;
+	flex-basis: 60%;
+	text-align: start;
+	align-self: center;
+	font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item-buttons {
+	display: flex;
+	flex-basis: 40%;
+	justify-content: space-evenly;
+	height: 50px;
+}
+
+/* ADDITEM COMPONENT */
+
+.add-item-container {
+	margin-bottom: 35px;
+}
+
+/* BUTTONS */
+button:hover{
+	opacity: 0.7;
+}
+
+button,
+.add-item-input {
+	padding: 10px 15px;
+	font-size: 16px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.add-item-button {
+	color: #fff;
+	background-color: #5cb85c;
+	border-color: #4cae4c;
+	margin-left: 10px;
+}
+
+.item-button-delete {
+	color: #fff;
+	background-color: #d9534f;
+	border-color: #d43f3a;
+}
+
+.item-button-edit {
+	color: #fff;
+	background-color: #337ab7;
+	border-color: #2e6da4;
+}
+
+.item-button-submit {
+	color: #fff;
+	background-color: #5bc0de;
+	border-color: #46b8da;
+}
+
+.reset-button {
+	color: #fff;
+	background-color: #f0ad4e;
+	border-color: #eea236;
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		background-color: lightblue;
+		font-size: 12px;
+	}
+
+	button,
+	.add-item-input {
+		padding: 5px;
+		margin: 10px;
+	}
 }

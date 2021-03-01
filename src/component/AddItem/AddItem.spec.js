@@ -12,31 +12,27 @@ it('renders correctly', () => {
 	expect(queryByTestId(/add-item/i)).toBeTruthy;
 });
 
-describe('Input value', () => {
-	it('should updates value on change', () => {
-		const { queryByPlaceholderText } = render(<AddItem />);
-		const Input = queryByPlaceholderText(/type something../i);
-		fireEvent.change(Input, { target: { value: 'test' } });
+it('should updates value on change', () => {
+	const { queryByPlaceholderText } = render(<AddItem />);
+	const Input = queryByPlaceholderText(/type something../i);
+	fireEvent.change(Input, { target: { value: 'test' } });
 
-		expect(Input.value).toBe('test');
-	});
+	expect(Input.value).toBe('test');
 });
 
-describe('with data inside the input field', () => {
-	it('should fire addItem', () => {
-		const mockAddItem = jest.fn();
+it('should fire addItem', () => {
+	const mockAddItem = jest.fn();
 
-		const { getByTestId, getByPlaceholderText } = render(
-			<AddItem addItem={mockAddItem} />
-		);
-		const Input = getByPlaceholderText('Type something..');
-		fireEvent.change(Input, { target: { value: 'test' } });
-		expect(Input).not.toBe('');
+	const { getByTestId, getByPlaceholderText } = render(
+		<AddItem addItem={mockAddItem} />
+	);
+	const Input = getByPlaceholderText('Type something..');
+	fireEvent.change(Input, { target: { value: 'test' } });
+	expect(Input).not.toBe('');
 
-		const FormButton = getByTestId('form-button');
-		fireEvent.click(FormButton);
+	const FormButton = getByTestId('form-button');
+	fireEvent.click(FormButton);
 
-		expect(mockAddItem).toHaveBeenCalled();
-		expect(mockAddItem).toHaveBeenCalledTimes(1);
-	});
+	expect(mockAddItem).toHaveBeenCalled();
+	expect(mockAddItem).toHaveBeenCalledTimes(1);
 });
